@@ -137,6 +137,12 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             case IDM_EXIT:
                 DestroyWindow(hWnd);
                 break;
+            case ID_TOOLBAR_REGISTER:
+               MessageBox(hWnd, L"Registering", L"Registering...", MB_OK);
+               break;
+            case ID_TOOLBAR_UNREGISTER:
+               MessageBox(hWnd, L"Unregistering", L"Unregistering...", MB_OK);
+               break;
             default:
                 return DefWindowProc(hWnd, message, wParam, lParam);
             }
